@@ -1,84 +1,58 @@
 <!doctype html>
-<html class="no-js" lang="en">
+<html class="no-js" lang="en" dir="ltr">
 
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Camp FIRE Calc</title>
-  <link rel="stylesheet" href="css/foundation.min.css">
+  <link rel="stylesheet" href="css/foundation.css">
+  <link rel="stylesheet" href="css/app.css">
 </head>
 
 <body>
 
-  <div class="off-canvas-wrapper">
-    <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper>
-
-      <div class="off-canvas position-left reveal-for-large" id="my-info" data-off-canvas data-position="left">
-        <div class="row column">
-          <br>
-          <img class="thumbnail" src="images/MeImage.JPG" height=3 50px width=550px>
-         <!----->
-        </div>
+  <div class="grid-container">
+    <div class="grid-x grid-padding-x">
+      <div class="large-12 cell">
+        <h1>CampFIRE</h1>
       </div>
+    </div>
 
-      <div class="off-canvas-content" data-off-canvas-content>
-        <div class="title-bar hide-for-large">
-          <div class="title-bar-left">
-            <button class="menu-icon" type="button" data-open="my-info"></button>
-            <span class="title-bar-title">Kat Mayo</span>
-          </div>
-        </div>
-        <div class="callout primary">
-          <div class="row column">
-            <!-- <h4>Welcome to my portfolio!</h4> -->
-          </div>
-        </div>
-        <div class="row small-up-2 medium-up-3 large-up-4">
-          
-        </div>
+    <div class="grid-x grid-padding-x">
+      <div class="large-12 cell">
+        <div class="callout">
+          <h3>We&rsquo;re stoked you want to reach financial independence! </h3>
+          <!-- <p>Fill in this form to track your progress:</p> -->
+          <h5>Track your progress:</h5>
+          <form>
+            <div class="grid-x grid-padding-x">
+              <div class="large-12 cell">
+                <label>Assets (add up your cash, value of investments here)</label>
+                <input type="text" placeholder="350000" />
+              </div>
 
-        <hr>
+              <div class="large-12 cell">
+                <label>Liabilities (add your loans)</label>
+                <input type="text" placeholder="65000" />
+              </div>
 
-        <div class="row">
-          <div class="medium-6 columns">
-            <h3>Contact Me</h3>
-            <p>If you're looking to hire someone who is excited about solving tough problems, fill out my contact me and I'll
-              be in touch.</p>
-            <ul class="menu">
-              <li>
-                <a href="https://www.katiemayo.com/" target="_blank">My Blog</a>
-              </li>
-              <li>
-                <a href="https://www.flickr.com/photos/141176327@N06/" target="_blank">Flickr</a>
-              </li>
-              <li>
-                <a href="https://katiejill.wixsite.com/portfolio" target="_blank">Photography Portfolio</a>
-              </li>
-            </ul>
-          </div>
-          <div class="medium-6 columns">
-            <label>Name              
-              <input type="text" placeholder="Name">
-            </label>
-            <label>Email
-              <input type="text" placeholder="Email">
-            </label>
-            <label>
-              Message
-              <textarea placeholder="Message"></textarea>
-            </label>
-            <input type="submit" class="button expanded" value="Submit">
-          </div>
+              <div class="large-12 cell">
+                <label>Annual Expenses (add up total expenses for a year)</label>
+                <input type="number" placeholder="50000" />
+              </div>
+            </div>
+            <button class="submit success button">Submit</button>
+          </form>
         </div>
       </div>
     </div>
   </div>
 
   <script src="js/vendor/jquery.js"></script>
+  <script src="js/vendor/what-input.js"></script>
   <script src="js/vendor/foundation.js"></script>
-  <script>
-    $(document).foundation();
-  </script>
+  <script src="js/app.js"></script>
 </body>
 
 </html>
